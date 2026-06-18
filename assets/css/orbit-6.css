@@ -285,11 +285,14 @@ p {
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 13px;
   padding: 8px 12px;
 }
 .main-wrapper .print-button:hover {
   background: #4B6A78;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer {
