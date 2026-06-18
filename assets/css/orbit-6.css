@@ -80,6 +80,14 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+.sidebar-wrapper .tagline + .tagline {
+  margin-top: 4px;
+}
+.sidebar-wrapper .location {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  margin-top: 14px;
+}
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
   width: 100%;
@@ -105,6 +113,11 @@ p {
 }
 .sidebar-wrapper .container-block {
   padding: 30px;
+}
+.sidebar-wrapper .sidebar-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 26px;
+  padding-top: 24px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
@@ -157,6 +170,28 @@ p {
 .sidebar-wrapper .interests-list li:last-child {
   margin-bottom: 0;
 }
+.sidebar-wrapper .lang-desc {
+  color: rgba(255, 255, 255, 0.65);
+  display: block;
+  font-size: 12px;
+}
+.sidebar-wrapper .skill-group {
+  margin-bottom: 16px;
+}
+.sidebar-wrapper .skill-group:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .skill-group h3 {
+  color: #fff;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+.sidebar-wrapper .skill-group p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  line-height: 1.45;
+  margin: 0;
+}
 
 .main-wrapper {
   background: #fff;
@@ -193,10 +228,10 @@ p {
   margin-top: 6px;
 }
 .main-wrapper .section {
-  margin-bottom: 60px;
+  margin-bottom: 48px;
 }
 .main-wrapper .experiences-section .item {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .main-wrapper .upper-row {
   position: relative;
@@ -232,6 +267,30 @@ p {
 .main-wrapper .projects-section .item {
   margin-bottom: 15px;
 }
+.main-wrapper .details ul,
+.main-wrapper .compact-list {
+  padding-left: 20px;
+}
+.main-wrapper .details li,
+.main-wrapper .compact-list li {
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.main-wrapper .additional-experience p {
+  margin-bottom: 8px;
+}
+.main-wrapper .print-button {
+  background: #2e4049;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 8px 12px;
+}
+.main-wrapper .print-button:hover {
+  background: #4B6A78;
+}
 
 .footer {
   padding: 30px;
@@ -265,5 +324,106 @@ p {
     float: left;
     width: 30%;
     margin-bottom: 0;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0;
+    size: A4;
+  }
+
+  body {
+    background: #fff;
+    font-size: 11px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .wrapper {
+    box-shadow: none;
+    margin: 0;
+    max-width: none;
+    width: 793px;
+  }
+
+  .sidebar-wrapper {
+    width: 210px;
+  }
+
+  .sidebar-wrapper .profile-container,
+  .sidebar-wrapper .container-block {
+    padding: 20px;
+  }
+
+  .sidebar-wrapper .name {
+    font-size: 25px;
+  }
+
+  .sidebar-wrapper .tagline,
+  .sidebar-wrapper .container-block-title {
+    font-size: 13px;
+  }
+
+  .sidebar-wrapper .profile {
+    width: 145px;
+  }
+
+  .sidebar-wrapper .sidebar-section {
+    margin-top: 18px;
+    padding-top: 16px;
+  }
+
+  .sidebar-wrapper .skill-group {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-wrapper .skill-group h3 {
+    font-size: 11px;
+  }
+
+  .sidebar-wrapper .skill-group p,
+  .sidebar-wrapper .lang-desc {
+    font-size: 9px;
+  }
+
+  .main-wrapper {
+    padding: 32px 245px 32px 35px;
+  }
+
+  .main-wrapper .section {
+    margin-bottom: 25px;
+  }
+
+  .main-wrapper .section-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .main-wrapper .experiences-section .item {
+    margin-bottom: 14px;
+  }
+
+  .main-wrapper .job-title {
+    font-size: 13px;
+  }
+
+  .main-wrapper .company {
+    margin-bottom: 5px;
+  }
+
+  .main-wrapper .details li,
+  .main-wrapper .compact-list li {
+    line-height: 1.35;
+    margin-bottom: 3px;
+  }
+
+  .print-button {
+    display: none;
+  }
+
+  .main-wrapper .section-title,
+  .main-wrapper .job-title {
+    break-inside: avoid;
   }
 }
