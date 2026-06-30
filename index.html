@@ -440,6 +440,15 @@
       }
     }
 
+    function getUrlLanguage() {
+      try {
+        const language = new URLSearchParams(window.location.search).get("lang");
+        return translations[language] ? language : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
     function saveLanguage(language) {
       try {
         localStorage.setItem("cv-language", language);
@@ -483,7 +492,8 @@
       setLanguage(currentLanguage === "en" ? "es" : "en");
     });
 
-    setLanguage(getSavedLanguage() === "es" ? "es" : "en");
+    const initialLanguage = getUrlLanguage() || (getSavedLanguage() === "es" ? "es" : "en");
+    setLanguage(initialLanguage);
   </script>
 </body>
 </html>
