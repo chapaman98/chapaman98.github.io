@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css" />
   <script defer src="assets/fontawesome/js/all.min.js"></script>
   <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
-  <link id="theme-style" rel="stylesheet" href="assets/css/orbit-6.css" />
+  <link id="theme-style" rel="stylesheet" href="assets/css/orbit-6.css?v=3" />
 
   <meta name="description" content="Data Scientist, Data and BI Analyst, and MuleSoft Certified Developer. Python, SQL, Power BI, machine learning and enterprise integrations." />
 </head>
@@ -87,9 +87,8 @@
     <main class="main-wrapper" aria-label="Professional profile, experience, projects and education">
       <div class="language-switch">
         <button class="language-toggle" type="button" aria-pressed="false" aria-label="Switch CV language to Spanish">
-          <i class="fas fa-language"></i>
           <span class="language-current">EN</span>
-          <span class="language-divider" aria-hidden="true"></span>
+          <span class="language-divider" aria-hidden="true">/</span>
           <span class="language-target">ES</span>
         </button>
       </div>
@@ -103,7 +102,7 @@
           <p data-i18n="profileParagraphTwo">
             Strong background in Python, SQL, Power BI, MuleSoft, Salesforce integrations, ETL pipelines, web scraping and predictive modeling. Experienced in consulting environments, Agile teams and translating technical results into business insights for decision-making.
           </p>
-          <a class="print-button" href="PDFs/pdfCV.pdf" download="Franco_Spadoni_CV.pdf"><i class="fas fa-file-pdf"></i><span data-i18n="downloadPdf">Download PDF</span></a>
+          <a class="print-button" href="PDFs/pdfCV.pdf" download="Franco_Spadoni_CV_EN.pdf"><i class="fas fa-file-pdf"></i><span data-i18n="downloadPdf">Download PDF</span></a>
         </div>
       </section>
 
@@ -418,9 +417,20 @@
     const languageButton = document.querySelector(".language-toggle");
     const currentLanguageLabel = document.querySelector(".language-current");
     const targetLanguageLabel = document.querySelector(".language-target");
+    const pdfButton = document.querySelector(".print-button");
     const descriptionMeta = document.querySelector('meta[name="description"]');
     const sidebar = document.querySelector(".sidebar-wrapper");
     const main = document.querySelector(".main-wrapper");
+    const pdfFiles = {
+      en: {
+        href: "PDFs/pdfCV.pdf",
+        download: "Franco_Spadoni_CV_EN.pdf"
+      },
+      es: {
+        href: "PDFs/pdfCV-ES.pdf",
+        download: "Franco_Spadoni_CV_ES.pdf"
+      }
+    };
 
     function getSavedLanguage() {
       try {
@@ -450,6 +460,8 @@
       main.setAttribute("aria-label", copy.mainAria);
       languageButton.setAttribute("aria-label", copy.switchAria);
       languageButton.setAttribute("aria-pressed", language === "es");
+      pdfButton.setAttribute("href", pdfFiles[language].href);
+      pdfButton.setAttribute("download", pdfFiles[language].download);
       currentLanguageLabel.textContent = language.toUpperCase();
       targetLanguageLabel.textContent = targetLanguage;
 
