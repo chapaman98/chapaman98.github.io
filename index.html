@@ -20,8 +20,8 @@
       <div class="profile-container">
         <img class="profile" src="assets/images/IMG_0606.png" alt="Franco Spadoni" />
         <h1 class="name">Franco Spadoni</h1>
-        <h2 class="tagline">Data Scientist &middot; Data &amp; BI Analyst</h2>
-        <h2 class="tagline">MuleSoft Certified Developer</h2>
+        <h2 class="tagline" data-i18n="taglinePrimary">Data Scientist &middot; Data &amp; BI Analyst</h2>
+        <h2 class="tagline" data-i18n="taglineSecondary">MuleSoft Certified Developer</h2>
         <div class="location">Rosario, Santa Fe, Argentina</div>
       </div>
 
@@ -35,6 +35,10 @@
             <i class="fab fa-whatsapp"></i>
             <a href="tel:+5493413012828">+54 9 341 301 2828</a>
           </li>
+          <li class="birthdate">
+            <i class="fas fa-calendar-alt"></i>
+            <span data-i18n="birthdate">Date of birth: 28/02/1998</span>
+          </li>
           <li class="linkedin">
             <i class="fab fa-linkedin-in"></i>
             <a href="https://www.linkedin.com/in/franco-spadoni-00963a220/" target="_blank" rel="noopener noreferrer">/franco-spadoni</a>
@@ -42,193 +46,202 @@
         </ul>
 
         <section class="sidebar-section" aria-labelledby="skills-title">
-          <h2 id="skills-title" class="container-block-title"><i class="fas fa-code"></i> Technical Skills</h2>
+          <h2 id="skills-title" class="container-block-title"><i class="fas fa-code"></i><span data-i18n="skillsTitle">Technical Skills</span></h2>
           <div class="skill-group">
-            <h3>Data Science &amp; ML</h3>
-            <p>Python, Pandas, NumPy, Scikit-learn, CatBoost, Ridge Regression, feature engineering, model evaluation, backtesting</p>
+            <h3 data-i18n="skillDataScienceTitle">Data Science &amp; ML</h3>
+            <p data-i18n="skillDataScienceText">Python, Pandas, NumPy, Scikit-learn, CatBoost, Ridge Regression, feature engineering, model evaluation, backtesting</p>
           </div>
           <div class="skill-group">
-            <h3>Analytics &amp; BI</h3>
-            <p>SQL, Power BI, DAX, data modeling, KPI design, dashboards, data cleaning, ETL</p>
+            <h3 data-i18n="skillAnalyticsTitle">Analytics &amp; BI</h3>
+            <p data-i18n="skillAnalyticsText">SQL, Power BI, DAX, data modeling, KPI design, dashboards, data cleaning, ETL</p>
           </div>
           <div class="skill-group">
-            <h3>Data Engineering</h3>
-            <p>Web scraping, Selenium, REST APIs, JSON/CSV, SQLite, MongoDB, automated data pipelines</p>
+            <h3 data-i18n="skillEngineeringTitle">Data Engineering</h3>
+            <p data-i18n="skillEngineeringText">Web scraping, Selenium, REST APIs, JSON/CSV, SQLite, MongoDB, automated data pipelines</p>
           </div>
           <div class="skill-group">
-            <h3>Integrations &amp; Tools</h3>
-            <p>MuleSoft, Anypoint Platform, Salesforce, Postman, RabbitMQ, Git, Bitbucket, Jira, SSMS</p>
+            <h3 data-i18n="skillToolsTitle">Integrations &amp; Tools</h3>
+            <p data-i18n="skillToolsText">MuleSoft, Anypoint Platform, Salesforce, Postman, RabbitMQ, Git, Bitbucket, Jira, SSMS</p>
           </div>
         </section>
 
         <section class="sidebar-section" aria-labelledby="languages-title">
-          <h2 id="languages-title" class="container-block-title"><i class="fas fa-globe-americas"></i> Languages</h2>
+          <h2 id="languages-title" class="container-block-title"><i class="fas fa-globe-americas"></i><span data-i18n="languagesTitle">Languages</span></h2>
           <ul class="list-unstyled interests-list">
-            <li>Spanish <span class="lang-desc">Native</span></li>
-            <li>English <span class="lang-desc">Advanced &middot; TOEFL C1</span></li>
-            <li>Italian <span class="lang-desc">Intermediate</span></li>
+            <li><span data-i18n="languageSpanish">Spanish</span> <span class="lang-desc" data-i18n="languageNative">Native</span></li>
+            <li><span data-i18n="languageEnglish">English</span> <span class="lang-desc" data-i18n="languageEnglishLevel">Advanced &middot; TOEFL C1</span></li>
+            <li><span data-i18n="languageItalian">Italian</span> <span class="lang-desc" data-i18n="languageItalianLevel">Intermediate</span></li>
           </ul>
         </section>
 
         <section class="sidebar-section" aria-labelledby="credentials-title">
-          <h2 id="credentials-title" class="container-block-title"><i class="fas fa-id-card"></i> Credentials</h2>
+          <h2 id="credentials-title" class="container-block-title"><i class="fas fa-id-card"></i><span data-i18n="credentialsTitle">Credentials</span></h2>
           <ul class="list-unstyled interests-list">
-            <li>Italian citizenship and passport</li>
-            <li>Driving licenses: Argentina B2/A1 and Italy</li>
+            <li data-i18n="credentialCitizenship">Italian citizenship and passport</li>
+            <li data-i18n="credentialLicenses">Driving licenses: Argentina B2/A1 and Italy</li>
           </ul>
         </section>
       </div>
     </aside>
 
     <main class="main-wrapper" aria-label="Professional profile, experience, projects and education">
+      <div class="language-switch">
+        <button class="language-toggle" type="button" aria-pressed="false" aria-label="Switch CV language to Spanish">
+          <i class="fas fa-language"></i>
+          <span class="language-current">EN</span>
+          <span class="language-divider" aria-hidden="true"></span>
+          <span class="language-target">ES</span>
+        </button>
+      </div>
+
       <section class="section summary-section">
-        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>Professional Profile</h2>
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span><span data-i18n="profileTitle">Professional Profile</span></h2>
         <div class="summary">
-          <p>
+          <p data-i18n="profileParagraphOne">
             Data Scientist and MuleSoft Certified Developer with a completed Master's degree in Data Science &amp; Artificial Intelligence. Experience combining software development, data engineering, API integrations, business intelligence and machine learning to build end-to-end solutions.
           </p>
-          <p>
+          <p data-i18n="profileParagraphTwo">
             Strong background in Python, SQL, Power BI, MuleSoft, Salesforce integrations, ETL pipelines, web scraping and predictive modeling. Experienced in consulting environments, Agile teams and translating technical results into business insights for decision-making.
           </p>
-          <a class="print-button" href="PDFs/pdfCV.pdf" download="Franco_Spadoni_CV.pdf"><i class="fas fa-file-pdf"></i> Download PDF</a>
+          <a class="print-button" href="PDFs/pdfCV.pdf" download="Franco_Spadoni_CV.pdf"><i class="fas fa-file-pdf"></i><span data-i18n="downloadPdf">Download PDF</span></a>
         </div>
       </section>
 
       <section class="section strengths-section">
-        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-bullseye"></i></span>Core Strengths</h2>
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-bullseye"></i></span><span data-i18n="strengthsTitle">Core Strengths</span></h2>
         <ul class="compact-list">
-          <li>End-to-end data solutions: extraction, ETL, modeling, dashboards and business insights.</li>
-          <li>Strong bridge between software development, analytics and business requirements.</li>
-          <li>Enterprise integration experience with APIs, MuleSoft and Salesforce.</li>
-          <li>Clear communication of technical results to non-technical stakeholders.</li>
+          <li data-i18n="strengthOne">End-to-end data solutions: extraction, ETL, modeling, dashboards and business insights.</li>
+          <li data-i18n="strengthTwo">Strong bridge between software development, analytics and business requirements.</li>
+          <li data-i18n="strengthThree">Enterprise integration experience with APIs, MuleSoft and Salesforce.</li>
+          <li data-i18n="strengthFour">Clear communication of technical results to non-technical stakeholders.</li>
         </ul>
       </section>
 
       <section class="section experiences-section">
-        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>Professional Experience</h2>
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span><span data-i18n="experienceTitle">Professional Experience</span></h2>
         <div class="item">
           <div class="meta">
             <div class="upper-row">
-              <h3 class="job-title">Programmer Analyst Consultant</h3>
-              <div class="time">2022 &ndash; Present</div>
+              <h3 class="job-title" data-i18n="deloitteRole">Programmer Analyst Consultant</h3>
+              <div class="time" data-i18n="presentRange">2022 &ndash; Present</div>
             </div>
             <div class="company">Deloitte</div>
           </div>
           <div class="details">
             <ul>
-              <li>Design, develop and maintain MuleSoft integrations in Anypoint Platform, connecting enterprise systems through REST APIs and structured data flows.</li>
-              <li>Contribute to Salesforce integration projects involving data exchange, API consumption and process automation.</li>
-              <li>Build and maintain Python and SQL data processes for analytics, reporting and operational support.</li>
-              <li>Collaborate with international Agile teams using Jira, Git and Bitbucket, contributing to requirements analysis, documentation, testing and production support.</li>
-              <li>Work with enterprise data structures and SAP-connected environments in integration and data consumption scenarios.</li>
+              <li data-i18n="deloitteBulletOne">Design, develop and maintain MuleSoft integrations in Anypoint Platform, connecting enterprise systems through REST APIs and structured data flows.</li>
+              <li data-i18n="deloitteBulletTwo">Contribute to Salesforce integration projects involving data exchange, API consumption and process automation.</li>
+              <li data-i18n="deloitteBulletThree">Build and maintain Python and SQL data processes for analytics, reporting and operational support.</li>
+              <li data-i18n="deloitteBulletFour">Collaborate with international Agile teams using Jira, Git and Bitbucket, contributing to requirements analysis, documentation, testing and production support.</li>
+              <li data-i18n="deloitteBulletFive">Work with enterprise data structures and SAP-connected environments in integration and data consumption scenarios.</li>
             </ul>
           </div>
         </div>
 
         <div class="item additional-experience">
           <div class="meta">
-            <h3 class="job-title">Additional Experience</h3>
+            <h3 class="job-title" data-i18n="additionalExperienceTitle">Additional Experience</h3>
           </div>
           <div class="details">
-            <p><strong>Technical Service</strong> &middot; 2018 &ndash; Present &mdash; PC repair, OS deployment, preventive maintenance and performance optimization.</p>
-            <p><strong>Field Hockey Coach, Jockey Club Rosario</strong> &middot; 2016 &ndash; Present &mdash; Team leadership, planning, communication and performance tracking.</p>
-            <p><strong>Commercial Employee, Ciccioelec S.A.</strong> &middot; 2021 &ndash; 2022 &mdash; Customer support, product catalog management and order tracking.</p>
+            <p data-i18n-html="additionalExperienceTechnical"><strong>Technical Service</strong> &middot; 2018 &ndash; Present &mdash; PC repair, OS deployment, preventive maintenance and performance optimization.</p>
+            <p data-i18n-html="additionalExperienceCoach"><strong>Field Hockey Coach, Jockey Club Rosario</strong> &middot; 2016 &ndash; Present &mdash; Team leadership, planning, communication and performance tracking.</p>
+            <p data-i18n-html="additionalExperienceCommercial"><strong>Commercial Employee, Ciccioelec S.A.</strong> &middot; 2021 &ndash; 2022 &mdash; Customer support, product catalog management and order tracking.</p>
           </div>
         </div>
       </section>
 
       <section class="section experiences-section">
-        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Selected Projects</h2>
-        <p class="section-note">The projects below are personal projects developed by me.</p>
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span><span data-i18n="projectsTitle">Selected Projects</span></h2>
+        <p class="section-note" data-i18n="projectsNote">The projects below are personal projects developed by me.</p>
         <div class="item">
           <div class="meta">
-            <h3 class="job-title">Price Intelligence Platform for Construction Materials</h3>
+            <h3 class="job-title" data-i18n="projectPriceTitle">Price Intelligence Platform for Construction Materials</h3>
             <div class="company">Python &middot; Selenium &middot; Pandas &middot; Scikit-learn &middot; CatBoost &middot; Power BI</div>
           </div>
           <div class="details">
             <ul>
-              <li>Built an end-to-end system that extracts construction material prices from multiple retailers and transforms unstructured web data into comparable historical datasets.</li>
-              <li>Developed modular scrapers, cleaning and ETL pipelines, automated exports and a unified dataset covering prices, discounts, categories, sellers and timestamps.</li>
-              <li>Trained and compared forecasting models.</li>
-              <li>Designed Power BI dashboards for price evolution, discounts, seller behavior and purchasing opportunities, turning model output into business recommendations.</li>
+              <li data-i18n="projectPriceBulletOne">Built an end-to-end system that extracts construction material prices from multiple retailers and transforms unstructured web data into comparable historical datasets.</li>
+              <li data-i18n="projectPriceBulletTwo">Developed modular scrapers, cleaning and ETL pipelines, automated exports and a unified dataset covering prices, discounts, categories, sellers and timestamps.</li>
+              <li data-i18n="projectPriceBulletThree">Trained and compared forecasting models.</li>
+              <li data-i18n="projectPriceBulletFour">Designed Power BI dashboards for price evolution, discounts, seller behavior and purchasing opportunities, turning model output into business recommendations.</li>
             </ul>
           </div>
         </div>
 
         <div class="item">
           <div class="meta">
-            <h3 class="job-title">Healthy Pet &mdash; Local Business Management System</h3>
+            <h3 class="job-title" data-i18n="projectPetTitle">Healthy Pet &mdash; Local Business Management System</h3>
             <div class="company">Python &middot; SQLite &middot; Business Logic &middot; Data Management</div>
           </div>
           <div class="details">
             <ul>
-              <li>Developed a local management system for customers, recurring orders, products, stock, invoices, payments and account balances.</li>
-              <li>Designed business rules for multi-day deliveries, recurring orders and customer-product relationships.</li>
-              <li>Implemented persistence, backup logic, balance calculations and data-integrity controls for daily offline operation</li>
+              <li data-i18n="projectPetBulletOne">Developed a local management system for customers, recurring orders, products, stock, invoices, payments and account balances.</li>
+              <li data-i18n="projectPetBulletTwo">Designed business rules for multi-day deliveries, recurring orders and customer-product relationships.</li>
+              <li data-i18n="projectPetBulletThree">Implemented persistence, backup logic, balance calculations and data-integrity controls for daily offline operation</li>
             </ul>
           </div>
         </div>
 
         <div class="item">
           <div class="meta">
-            <h3 class="job-title">Vehicle License Plate Recognition System</h3>
+            <h3 class="job-title" data-i18n="projectPlateTitle">Vehicle License Plate Recognition System</h3>
             <div class="company">Python &middot; OpenCV &middot; YOLOv8 &middot; OCR</div>
           </div>
           <div class="details">
             <ul>
-              <li>Developed an automatic license plate recognition system using YOLOv8 for detection, OpenCV for image preprocessing and OCR for character extraction.</li>
-              <li>Handled varied lighting and camera angles and stored detected plate numbers as structured data for subsequent analysis.</li>
+              <li data-i18n="projectPlateBulletOne">Developed an automatic license plate recognition system using YOLOv8 for detection, OpenCV for image preprocessing and OCR for character extraction.</li>
+              <li data-i18n="projectPlateBulletTwo">Handled varied lighting and camera angles and stored detected plate numbers as structured data for subsequent analysis.</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section class="section experiences-section">
-        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-graduation-cap"></i></span>Education</h2>
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-graduation-cap"></i></span><span data-i18n="educationTitle">Education</span></h2>
         <div class="item">
           <div class="meta">
             <div class="upper-row">
-              <h3 class="job-title">Master in Data Science &amp; Artificial Intelligence</h3>
+              <h3 class="job-title" data-i18n="educationMasterTitle">Master in Data Science &amp; Artificial Intelligence</h3>
               <div class="time">2026</div>
             </div>
-            <div class="company">EBIS Business Techschool &middot; Completed</div>
+            <div class="company" data-i18n="educationMasterCompany">EBIS Business Techschool &middot; Completed</div>
           </div>
         </div>
         <div class="item">
           <div class="meta">
             <div class="upper-row">
-              <h3 class="job-title">Graduate Diploma in Generative AI Application Development</h3>
+              <h3 class="job-title" data-i18n="educationGenerativeTitle">Graduate Diploma in Generative AI Application Development</h3>
               <div class="time">2025</div>
             </div>
-            <div class="company">EBIS Business Techschool &middot; Completed</div>
+            <div class="company" data-i18n="educationGenerativeCompany">EBIS Business Techschool &middot; Completed</div>
           </div>
         </div>
         <div class="item">
           <div class="meta">
             <div class="upper-row">
-              <h3 class="job-title">Licentiate in Data Science</h3>
+              <h3 class="job-title" data-i18n="educationLicentiateTitle">Licentiate in Data Science</h3>
               <div class="time">2024</div>
             </div>
-            <div class="company">Universidad del Gran Rosario &middot; Completed</div>
+            <div class="company" data-i18n="educationLicentiateCompany">Universidad del Gran Rosario &middot; Completed</div>
           </div>
         </div>
         <div class="item">
           <div class="meta">
             <div class="upper-row">
-              <h3 class="job-title">Programming Technician</h3>
+              <h3 class="job-title" data-i18n="educationProgrammingTitle">Programming Technician</h3>
               <div class="time">2022</div>
             </div>
-            <div class="company">Universidad Austral &middot; Completed</div>
+            <div class="company" data-i18n="educationProgrammingCompany">Universidad Austral &middot; Completed</div>
           </div>
         </div>
       </section>
 
       <section class="section experiences-section certifications-section">
-        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-certificate"></i></span>Certifications</h2>
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-certificate"></i></span><span data-i18n="certificationsTitle">Certifications</span></h2>
         <div class="item">
           <div class="meta">
             <div class="upper-row">
-              <h3 class="job-title">MuleSoft Certified Developer</h3>
+              <h3 class="job-title" data-i18n="certMulesoft">MuleSoft Certified Developer</h3>
               <div class="time">2024</div>
             </div>
           </div>
@@ -236,7 +249,7 @@
         <div class="item">
           <div class="meta">
             <div class="upper-row">
-              <h3 class="job-title">TOEFL English Certification &mdash; C1</h3>
+              <h3 class="job-title" data-i18n="certToefl">TOEFL English Certification &mdash; C1</h3>
               <div class="time">2024</div>
             </div>
             <div class="company">ETS</div>
@@ -245,5 +258,220 @@
       </section>
     </main>
   </div>
+
+  <script>
+    const translations = {
+      en: {
+        documentTitle: "Franco Spadoni - CV",
+        metaDescription: "Data Scientist, Data and BI Analyst, and MuleSoft Certified Developer. Python, SQL, Power BI, machine learning and enterprise integrations.",
+        sidebarAria: "Contact information, skills and languages",
+        mainAria: "Professional profile, experience, projects and education",
+        switchAria: "Switch CV language to Spanish",
+        taglinePrimary: "Data Scientist · Data & BI Analyst",
+        taglineSecondary: "MuleSoft Certified Developer",
+        birthdate: "Date of birth: 28/02/1998",
+        skillsTitle: "Technical Skills",
+        skillDataScienceTitle: "Data Science & ML",
+        skillDataScienceText: "Python, Pandas, NumPy, Scikit-learn, CatBoost, Ridge Regression, feature engineering, model evaluation, backtesting",
+        skillAnalyticsTitle: "Analytics & BI",
+        skillAnalyticsText: "SQL, Power BI, DAX, data modeling, KPI design, dashboards, data cleaning, ETL",
+        skillEngineeringTitle: "Data Engineering",
+        skillEngineeringText: "Web scraping, Selenium, REST APIs, JSON/CSV, SQLite, MongoDB, automated data pipelines",
+        skillToolsTitle: "Integrations & Tools",
+        skillToolsText: "MuleSoft, Anypoint Platform, Salesforce, Postman, RabbitMQ, Git, Bitbucket, Jira, SSMS",
+        languagesTitle: "Languages",
+        languageSpanish: "Spanish",
+        languageNative: "Native",
+        languageEnglish: "English",
+        languageEnglishLevel: "Advanced · TOEFL C1",
+        languageItalian: "Italian",
+        languageItalianLevel: "Intermediate",
+        credentialsTitle: "Credentials",
+        credentialCitizenship: "Italian citizenship and passport",
+        credentialLicenses: "Driving licenses: Argentina B2/A1 and Italy",
+        profileTitle: "Professional Profile",
+        profileParagraphOne: "Data Scientist and MuleSoft Certified Developer with a completed Master's degree in Data Science & Artificial Intelligence. Experience combining software development, data engineering, API integrations, business intelligence and machine learning to build end-to-end solutions.",
+        profileParagraphTwo: "Strong background in Python, SQL, Power BI, MuleSoft, Salesforce integrations, ETL pipelines, web scraping and predictive modeling. Experienced in consulting environments, Agile teams and translating technical results into business insights for decision-making.",
+        downloadPdf: "Download PDF",
+        strengthsTitle: "Core Strengths",
+        strengthOne: "End-to-end data solutions: extraction, ETL, modeling, dashboards and business insights.",
+        strengthTwo: "Strong bridge between software development, analytics and business requirements.",
+        strengthThree: "Enterprise integration experience with APIs, MuleSoft and Salesforce.",
+        strengthFour: "Clear communication of technical results to non-technical stakeholders.",
+        experienceTitle: "Professional Experience",
+        deloitteRole: "Programmer Analyst Consultant",
+        presentRange: "2022 - Present",
+        deloitteBulletOne: "Design, develop and maintain MuleSoft integrations in Anypoint Platform, connecting enterprise systems through REST APIs and structured data flows.",
+        deloitteBulletTwo: "Contribute to Salesforce integration projects involving data exchange, API consumption and process automation.",
+        deloitteBulletThree: "Build and maintain Python and SQL data processes for analytics, reporting and operational support.",
+        deloitteBulletFour: "Collaborate with international Agile teams using Jira, Git and Bitbucket, contributing to requirements analysis, documentation, testing and production support.",
+        deloitteBulletFive: "Work with enterprise data structures and SAP-connected environments in integration and data consumption scenarios.",
+        additionalExperienceTitle: "Additional Experience",
+        additionalExperienceTechnical: "<strong>Technical Service</strong> · 2018 - Present - PC repair, OS deployment, preventive maintenance and performance optimization.",
+        additionalExperienceCoach: "<strong>Field Hockey Coach, Jockey Club Rosario</strong> · 2016 - Present - Team leadership, planning, communication and performance tracking.",
+        additionalExperienceCommercial: "<strong>Commercial Employee, Ciccioelec S.A.</strong> · 2021 - 2022 - Customer support, product catalog management and order tracking.",
+        projectsTitle: "Selected Projects",
+        projectsNote: "The projects below are personal projects developed by me.",
+        projectPriceTitle: "Price Intelligence Platform for Construction Materials",
+        projectPriceBulletOne: "Built an end-to-end system that extracts construction material prices from multiple retailers and transforms unstructured web data into comparable historical datasets.",
+        projectPriceBulletTwo: "Developed modular scrapers, cleaning and ETL pipelines, automated exports and a unified dataset covering prices, discounts, categories, sellers and timestamps.",
+        projectPriceBulletThree: "Trained and compared forecasting models.",
+        projectPriceBulletFour: "Designed Power BI dashboards for price evolution, discounts, seller behavior and purchasing opportunities, turning model output into business recommendations.",
+        projectPetTitle: "Healthy Pet - Local Business Management System",
+        projectPetBulletOne: "Developed a local management system for customers, recurring orders, products, stock, invoices, payments and account balances.",
+        projectPetBulletTwo: "Designed business rules for multi-day deliveries, recurring orders and customer-product relationships.",
+        projectPetBulletThree: "Implemented persistence, backup logic, balance calculations and data-integrity controls for daily offline operation.",
+        projectPlateTitle: "Vehicle License Plate Recognition System",
+        projectPlateBulletOne: "Developed an automatic license plate recognition system using YOLOv8 for detection, OpenCV for image preprocessing and OCR for character extraction.",
+        projectPlateBulletTwo: "Handled varied lighting and camera angles and stored detected plate numbers as structured data for subsequent analysis.",
+        educationTitle: "Education",
+        educationMasterTitle: "Master in Data Science & Artificial Intelligence",
+        educationMasterCompany: "EBIS Business Techschool · Completed",
+        educationGenerativeTitle: "Graduate Diploma in Generative AI Application Development",
+        educationGenerativeCompany: "EBIS Business Techschool · Completed",
+        educationLicentiateTitle: "Licentiate in Data Science",
+        educationLicentiateCompany: "Universidad del Gran Rosario · Completed",
+        educationProgrammingTitle: "Programming Technician",
+        educationProgrammingCompany: "Universidad Austral · Completed",
+        certificationsTitle: "Certifications",
+        certMulesoft: "MuleSoft Certified Developer",
+        certToefl: "TOEFL English Certification - C1"
+      },
+      es: {
+        documentTitle: "Franco Spadoni - CV",
+        metaDescription: "Data Scientist, Analista de Datos y BI, y Desarrollador Certificado MuleSoft. Python, SQL, Power BI, machine learning e integraciones empresariales.",
+        sidebarAria: "Información de contacto, habilidades e idiomas",
+        mainAria: "Perfil profesional, experiencia, proyectos y formación",
+        switchAria: "Cambiar el idioma del CV a inglés",
+        taglinePrimary: "Data Scientist · Analista de Datos y BI",
+        taglineSecondary: "Desarrollador Certificado MuleSoft",
+        birthdate: "Fecha de nacimiento: 28/02/1998",
+        skillsTitle: "Habilidades Técnicas",
+        skillDataScienceTitle: "Ciencia de Datos y ML",
+        skillDataScienceText: "Python, Pandas, NumPy, Scikit-learn, CatBoost, Ridge Regression, ingeniería de variables, evaluación de modelos, backtesting",
+        skillAnalyticsTitle: "Analítica y BI",
+        skillAnalyticsText: "SQL, Power BI, DAX, modelado de datos, diseño de KPIs, dashboards, limpieza de datos, ETL",
+        skillEngineeringTitle: "Ingeniería de Datos",
+        skillEngineeringText: "Web scraping, Selenium, APIs REST, JSON/CSV, SQLite, MongoDB, pipelines automatizados de datos",
+        skillToolsTitle: "Integraciones y Herramientas",
+        skillToolsText: "MuleSoft, Anypoint Platform, Salesforce, Postman, RabbitMQ, Git, Bitbucket, Jira, SSMS",
+        languagesTitle: "Idiomas",
+        languageSpanish: "Español",
+        languageNative: "Nativo",
+        languageEnglish: "Inglés",
+        languageEnglishLevel: "Avanzado · TOEFL C1",
+        languageItalian: "Italiano",
+        languageItalianLevel: "Intermedio",
+        credentialsTitle: "Credenciales",
+        credentialCitizenship: "Ciudadanía italiana y pasaporte italiano",
+        credentialLicenses: "Licencias de conducir: Argentina B2/A1 e Italia",
+        profileTitle: "Perfil Profesional",
+        profileParagraphOne: "Data Scientist y Desarrollador Certificado MuleSoft, con Maestría finalizada en Ciencia de Datos e Inteligencia Artificial. Experiencia integrando desarrollo de software, ingeniería de datos, integraciones API, business intelligence y machine learning para construir soluciones end-to-end.",
+        profileParagraphTwo: "Sólida experiencia en Python, SQL, Power BI, MuleSoft, integraciones con Salesforce, pipelines ETL, web scraping y modelado predictivo. Experiencia en entornos de consultoría, equipos ágiles y comunicación de resultados técnicos orientados a la toma de decisiones de negocio.",
+        downloadPdf: "Descargar PDF",
+        strengthsTitle: "Fortalezas Clave",
+        strengthOne: "Soluciones de datos end-to-end: extracción, ETL, modelado, dashboards e insights de negocio.",
+        strengthTwo: "Fuerte vínculo entre desarrollo de software, analítica y requerimientos de negocio.",
+        strengthThree: "Experiencia en integraciones empresariales con APIs, MuleSoft y Salesforce.",
+        strengthFour: "Comunicación clara de resultados técnicos para perfiles no técnicos.",
+        experienceTitle: "Experiencia Profesional",
+        deloitteRole: "Consultor Analista Programador",
+        presentRange: "2022 - Actualidad",
+        deloitteBulletOne: "Diseño, desarrollo y mantenimiento de integraciones MuleSoft en Anypoint Platform, conectando sistemas empresariales mediante APIs REST y flujos de datos estructurados.",
+        deloitteBulletTwo: "Participación en proyectos de integración con Salesforce, incluyendo intercambio de datos, consumo de APIs y automatización de procesos.",
+        deloitteBulletThree: "Desarrollo y mantenimiento de procesos de datos con Python y SQL para analítica, reporting y soporte operativo.",
+        deloitteBulletFour: "Colaboración con equipos internacionales bajo metodologías ágiles utilizando Jira, Git y Bitbucket, con aportes en análisis de requerimientos, documentación, testing y soporte productivo.",
+        deloitteBulletFive: "Trabajo con estructuras de datos empresariales y entornos conectados a SAP en escenarios de integración y consumo de información.",
+        additionalExperienceTitle: "Experiencia Adicional",
+        additionalExperienceTechnical: "<strong>Servicio Técnico</strong> · 2018 - Actualidad - Reparación de PCs, instalación de sistemas operativos, mantenimiento preventivo y optimización de rendimiento.",
+        additionalExperienceCoach: "<strong>Entrenador de Hockey, Jockey Club Rosario</strong> · 2016 - Actualidad - Liderazgo de equipos, planificación, comunicación y seguimiento de rendimiento.",
+        additionalExperienceCommercial: "<strong>Empleado Comercial, Ciccioelec S.A.</strong> · 2021 - 2022 - Atención al cliente, gestión de catálogo de productos y seguimiento de pedidos.",
+        projectsTitle: "Proyectos Seleccionados",
+        projectsNote: "Los proyectos listados a continuación son proyectos personales desarrollados por mí.",
+        projectPriceTitle: "Plataforma de Inteligencia de Precios para Materiales de Construcción",
+        projectPriceBulletOne: "Desarrollo de un sistema end-to-end para extraer precios de materiales de construcción desde múltiples comercios y transformar datos web no estructurados en datasets históricos comparables.",
+        projectPriceBulletTwo: "Desarrollo de scrapers modulares, procesos de limpieza y ETL, exportaciones automatizadas y un dataset unificado con precios, descuentos, categorías, vendedores y timestamps.",
+        projectPriceBulletThree: "Entrenamiento y comparación de modelos de forecasting.",
+        projectPriceBulletFour: "Diseño de dashboards en Power BI para analizar evolución de precios, descuentos, comportamiento de vendedores y oportunidades de compra, convirtiendo resultados de modelos en recomendaciones de negocio.",
+        projectPetTitle: "Healthy Pet - Sistema Local de Gestión Comercial",
+        projectPetBulletOne: "Desarrollo de un sistema local de gestión de clientes, pedidos recurrentes, productos, stock, facturación, pagos y saldos de cuenta.",
+        projectPetBulletTwo: "Diseño de reglas de negocio para repartos en múltiples días, pedidos recurrentes y relaciones cliente-producto.",
+        projectPetBulletThree: "Implementación de persistencia, lógica de backups, cálculos de saldos y controles de integridad de datos para operación diaria offline.",
+        projectPlateTitle: "Sistema de Reconocimiento de Patentes Vehiculares",
+        projectPlateBulletOne: "Desarrollo de un sistema automático de reconocimiento de patentes utilizando YOLOv8 para detección, OpenCV para preprocesamiento de imágenes y OCR para extracción de caracteres.",
+        projectPlateBulletTwo: "Gestión de variaciones de iluminación y ángulos de cámara, almacenando las patentes detectadas como datos estructurados para análisis posterior.",
+        educationTitle: "Formación Académica",
+        educationMasterTitle: "Maestría en Ciencia de Datos e Inteligencia Artificial",
+        educationMasterCompany: "EBIS Business Techschool · Finalizada",
+        educationGenerativeTitle: "Diplomatura de Posgrado en Desarrollo de Aplicaciones con IA Generativa",
+        educationGenerativeCompany: "EBIS Business Techschool · Finalizada",
+        educationLicentiateTitle: "Licenciatura en Ciencia de Datos",
+        educationLicentiateCompany: "Universidad del Gran Rosario · Finalizada",
+        educationProgrammingTitle: "Tecnicatura en Programación",
+        educationProgrammingCompany: "Universidad Austral · Finalizada",
+        certificationsTitle: "Certificaciones",
+        certMulesoft: "Desarrollador Certificado MuleSoft",
+        certToefl: "Certificación TOEFL de Inglés - C1"
+      }
+    };
+
+    const languageButton = document.querySelector(".language-toggle");
+    const currentLanguageLabel = document.querySelector(".language-current");
+    const targetLanguageLabel = document.querySelector(".language-target");
+    const descriptionMeta = document.querySelector('meta[name="description"]');
+    const sidebar = document.querySelector(".sidebar-wrapper");
+    const main = document.querySelector(".main-wrapper");
+
+    function getSavedLanguage() {
+      try {
+        return localStorage.getItem("cv-language");
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function saveLanguage(language) {
+      try {
+        localStorage.setItem("cv-language", language);
+      } catch (error) {
+        return;
+      }
+    }
+
+    function setLanguage(language) {
+      const copy = translations[language];
+      const targetLanguage = language === "en" ? "ES" : "EN";
+
+      document.documentElement.lang = language === "es" ? "es-AR" : "en";
+      document.title = copy.documentTitle;
+      document.body.dataset.language = language;
+      descriptionMeta.setAttribute("content", copy.metaDescription);
+      sidebar.setAttribute("aria-label", copy.sidebarAria);
+      main.setAttribute("aria-label", copy.mainAria);
+      languageButton.setAttribute("aria-label", copy.switchAria);
+      languageButton.setAttribute("aria-pressed", language === "es");
+      currentLanguageLabel.textContent = language.toUpperCase();
+      targetLanguageLabel.textContent = targetLanguage;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        element.textContent = copy[key];
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+        const key = element.dataset.i18nHtml;
+        element.innerHTML = copy[key];
+      });
+
+      saveLanguage(language);
+    }
+
+    languageButton.addEventListener("click", () => {
+      const currentLanguage = document.body.dataset.language || "en";
+      setLanguage(currentLanguage === "en" ? "es" : "en");
+    });
+
+    setLanguage(getSavedLanguage() === "es" ? "es" : "en");
+  </script>
 </body>
 </html>
